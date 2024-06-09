@@ -1,0 +1,1772 @@
+HTMl:
+<strike></strike>   ------
+<big></big>
+<small></small>
+<b></b>
+<i></i>
+<u></u>
+<sup></sup>
+<sub></sub>
+<ul type="disc/circle/square"></ul>
+<ol type="a/I/i/1"></ol>
+<li></li>
+
+<dl>
+<dt></dt>
+<dd></dd>
+</dl>
+<img src="" width="60px" height="30px"/>
+<a href="" target="_blank">Click</a>
+  <font color="red">Hello World</font>
+<font size="5">Hello World</font>
+<font face="Arial">Hello World</font>
+<a name="book"></a>
+<a href="#book">Click</a>
+<form action="data.php" method="get" target="_blank">
+<input type="text" name="name" value="Hello World"/>
+<input type="password" name="password"/>
+<input type="radio" name="gender"/><span>Male</span>
+<input type="radio" name="gender"/><Span>Female</Span>
+<input type="checkbox" name="vehicle" value="Cycle"/><span>I have a Cycle</span>
+<input type="checkbox" name="vehicle" value="Bike"/><span>I have a bike</span>
+<input type="submit" value="Submit">
+</form>
+
+<select name="answer">
+<option>-----Select------</option>
+<option value="1">One</option>
+<option value="2">Two</option>
+</select>
+<textarea name="message" rows="10" cols="30">Hello World</textarea>
+<input type="number" name="points" min="0" max="100" step="10"/>
+<input type="" list="browser"/>
+<datalist id="browser">
+    <option value="IE"></option>
+    <option value="IEE"></option>
+    <option value="firefox"></option>
+</datalist>
+<input type="text" autofocus="on" />
+<input type="text" autocomplete="on" />
+<input type="text" placeholder="enter" required/>
+<video src="" ></video>
+<video width="300px" height="300px" autoplay controls >
+<source src="production_id-4125001 (1080p).mp4" type="video/mp4">
+</video>
+<audio controls loop>
+    <source src="" type="audio/mpeg">Your browser doesnot support </source>
+</audio>
+
+<a href="Alphabets.zip"> click</a>
+<form action="data.php" method="get" id="above" target="_blank">
+<input type="submit">
+</form>
+<input type="text" form="above">
+--------------------------------------------------------------
+CSS
+	border-color:red;
+      border:dotted;
+      border-radius: 10px;
+      background: red;
+      color: red;
+      padding: 10px;
+      margin: 10px;
+      font-size: 30px;
+      height: 20px;
+      width: 10px;
+      opacity: 0.5;
+      background:url(./image.png);
+      cursor: help;
+      background-image: url(./image.png);
+      text-decoration: none;
+      text-decoration: overline;
+--------------------------------------------------------------
+JS
+<script type="text/javascript">
+     document.write (   "<H1>Welcome to ");
+     document.writeln(   "JavaScript Programming!</H1>" );
+     window.alert( "Welcome to\nJavaScript\nProgramming!" );
+     window.confirm("")
+    var a = window.prompt("Enter your name: ", "Name");
+
+     convert numbers from strings to integers
+    firstNumber = parseInt(firstNumber);
+<script>
+         Setting text using innerText
+        var textElement = document.getElementById("example");
+        textElement.innerText = "<strong>This is bold text</strong>";
+
+         Setting HTML using innerHTML
+        var htmlElement = document.createElement("div");
+        htmlElement.innerHTML = "<strong>This is bold text</strong>";
+;
+        document.body.appendChild(htmlElement);
+    </script>
+
+    Convert a number to a string:
+    let num = 15;
+    let text = num.toString();
+
+     function warnUser() {
+     confirm("Are you a student?");
+     }
+     <a href="ref.html" onClick="warnUser()">
+     onclick="myfun()"
+     onblur="myfun()"
+     ondblclick=“myfun()”
+     onfocus="myfun()"
+     onkeydown="myfun()“
+     onkeypress="myfun()“
+     onmouseout="myfun()“
+     onmouseover="myfun()"
+
+     <input type="button" value="Input" onclick="myfun()" id="i1"/>
+     function myfun()
+     {
+     var tf = document.getElementById('i1');
+     tf.value=“New";
+     }
+
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+     function mouseDown() {
+     document.getElementById("myP").style.color = "red";
+     }
+
+     function mouseUp() {
+     document.getElementById("myP").style.color = "green";
+     }
+
+     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32“>
+     function bigImg(x) {
+      x.style.height = "64px";
+      x.style.width = "64px";
+     }
+     function normalImg(x) {
+         x.style.height = "32px";
+         x.style.width = "32px";
+     }
+
+     <input type="text" onfocus="myFunction(this)">
+     function myFunction(x) {
+         x.style.background = "yellow";
+     }
+
+         <input type="text" onkeydown="myFunction()">
+         function myFunction() {
+         alert("You pressed a key inside the input field");
+     }
+  </script>
+------------------------------------------------------
+JQuery
+ $(document).ready(function () {
+       $("p").click(function () {
+         $(this).hide();
+       });
+       $(".heading").click(function () {
+         $(this).hide();
+       });
+       $("#para").click(function () {
+         $(this).hide();
+       });
+      <p>This is paragraph</p>
+     <h1 class="heading">This is heading</h1>
+     <p id="para">This is para</p>
+    });
+
+     $(document).ready(function () {
+       $("#hide").click(function () {
+         $("p").hide();
+       });
+       $("#show").click(function () {
+         $("p").show();
+       });
+       <button id="hide">Hide</button>
+     <button id="show">Show</button>
+    });
+=============================================================================
+
+       $(document).ready(function(){
+       $("button").click(function(){
+       $("#div1").fadeIn();
+       $("#div2").fadeIn("slow");2mls
+       $("#div3").fadeIn(3000);3mls
+     });
+     <button>Click to fade in boxes</button><br><br>
+       <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+       <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+       <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+================================================================================
+     $(document).ready(function(){
+         $("#div1").fadeOut();
+         $("#div2").fadeOut("slow");
+         $("#div3").fadeOut(3000);
+     });
+     <button>Click to fade out boxes</button><br><br>
+     <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+     <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+     <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+=================================================================================
+     $(document).ready(function(){
+     $("button").click(function(){
+     $("#div1").fadeToggle();
+     $("#div2").fadeToggle("slow");
+     $("#div3").fadeToggle(3000);
+     });
+     });
+     <button>Click to fade in/out boxes</button><br><br>
+     <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+     <div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+     <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+====================================================================================
+     $(document).ready(function(){
+     $("#flip").click(function(){
+     $("#panel").slideUp("slow"); .slideDown("slow");(display:none) .slideToggle("slow"); (display:none)
+     });
+     });
+     <div id="flip">Click to slide up panel</div>
+     <div id="panel">Hello world!</div>
+===============================================================================================
+     $(document).ready(function(){
+       $("button").dblclick(function(){
+         $("p").hide();
+       });
+     });
+     <button>Hello</button>
+     <p>This is para</p>
+================================================================================================
+     $(document).ready(function(){
+       $("button").hover(function(){ mouseleave mousedown mouseup hover
+         $("p").hide();
+       });
+     });
+     <button>Hello</button>
+     <p>This is para</p>
+=================================================================================================
+     $(document).ready(function(){
+       $("button").on({
+         mouseenter: function(){
+           $(this).css("background-color", "lightgray");
+         },
+         mouseleave: function(){
+           $(this).css("background-color", "lightblue");
+         },
+         click: function(){
+           $(this).css("background-color", "yellow");
+         }
+       });
+     });
+================================================================================================
+     $(document).ready(function(){
+       $("button").on("click dblclick", function(){
+         $(this).hide();
+       });
+     });
+     <button>Hello</button>
+
+===========================================================================================
+
+     $(document).ready(function () {
+       $("#box1").click(function () {
+         $("#img4").attr("src", "img1.png");
+       });
+       $("#box2").click(function () {
+         $("#img4").attr("src", "img2.png");
+       });
+       $("#box3").click(function () {
+         $("#img4").attr("src", "img3.png");
+       });
+     });
+     <div class="container">
+       <div class="box">
+         <img id="box1" src="img1.png" width="200px" height="200px" />
+       </div>
+       <div class="box">
+         <img id="box2" src="img2.png" width="200px" height="200px" />
+       </div>
+       <div class="box">
+         <img id="box3" src="img3.png" width="200px" height="200px" />
+       </div>
+     </div>;
+
+===================================================================================================
+bootstrap
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText vs innerHTML</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+<div class="row">
+<div class="col-sm-4 bg-primary ">
+  col-sm-4
+</div>
+<div class="col-sm-4 bg-success ">col-sm-4</div>
+<div class="col-sm-4 bg-danger ">col-sm-4</div>
+</div>
+  </div>
+</body>
+</html>
+
+
+=====================================================================================================
+
+CSS notes
+
+font-size:10px
+text-transform: uppercase
+text-decoration: underline
+text-align: center;
+text-shadow: 0px 0px 5px red;
+
+
+creating circle border:
+ border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+creating border
+    border-width:5px ;
+    border-style: dotted;
+    border-color: blue;
+    border:2px solid brown;
+
+creating leaf border
+ border-top-left-radius: 5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+OR
+border-radius:5px 50% 5px 50%;
+
+
+converting block element to inline element
+div{
+display: inline;
+border:2px solid red;
+width: 20px;
+height: 20px;
+}
+width and height dont work on inline
+
+div{
+display: inline-block;
+border:2px solid red;
+width: 200px;
+height: 200px;
+}
+
+using width or changing an inline element to inline-block or block
+span.w{
+    width: 50%;
+    border:2px solid red;
+display:block;
+}
+
+
+creating shadow
+box-shadow: 10px 10px 10px red;
+box-shadow: x y blur color;
+box-shadow: 5px 5px 6px inset red;
+ 
+
+padding:10px;
+padding: top right bottom left;
+padding: 15px 10px 25px 20px;
+
+margin:
+ margin: 15px 20px 25px 10px;
+    display: inline-block;
+
+center margin:
+ margin: 50px auto 50px auto;
+    display: block;
+
+
+creating a see through
+opacity: 0.5;
+background-color:rgba(0,0,0,0.5);
+background: transparent;
+  backdrop-filter: blur(10px);
+
+floating element
+.float{
+        margin:20px;
+        border: 2px solid black;
+        float: right;
+        box-shadow: 0 0 5px black;
+    }
+
+
+a{
+        font-size: 30px;
+        color: blue;
+      }
+      a:hover{
+        color :white;
+      }
+      a:active{
+color:yellow;
+      }
+a:visited{
+  color:gray;
+}
+
+ body{
+      background-image: url(th.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      background-position: center center;
+     }
+
+creating outline:
+outline: 2px solid black;
+outline-offset: 2px;
+
+position sticky
+position: sticky;
+ top: 0;
+    
+
+position fixed
+position: fixed;
+ top: 0;
+left: 0;
+
+position absolute
+.box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            
+          
+        }
+        .second{
+            width:50%;
+            height: 50%;
+            border: 2px solid red;
+            position: absolute;
+        }
+for absolute position there should be a parent element with relative position
+
+
+ #parent .box{
+            height: 30px;
+            border: 2px solid black;
+            
+        }
+
+        #parent >.box{
+
+        }
+        #parent .box+.box{
+            background-color: red;
+        }
+        #parent .box~.box{
+            padding: 10px;
+        }
+
+pseudo-element
+
+#box{
+    width:300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 50px auto;
+    position: relative;
+    background-color: black;
+}
+#box::before{
+    display: block;
+    border: 5px solid red;
+content: ' ';
+width: 100%;
+height: 100%;
+position: absolute;
+top:-30px;
+left: -30px;
+z-index: -5;
+
+}
+#box::after{
+     display: block;
+    border: 5px solid blue;
+content: ' ';
+width: 100%;
+height: 100%;
+position: absolute;
+/* bottom:-30px;
+right: -30px; */
+z-index: 5;
+}
+a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+a::before{
+    content: ' ';
+width:100%;
+height:10px;
+background-color: blue;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+a:hover::before{
+    height: 20px;
+}
+
+
+p::first-letter{
+    font-size: 30px;
+    float:left;
+    margin: 5px;
+}
+p::first-line{
+    font-weight: bold;
+}
+
+::selection{
+    background-color: aqua;
+    color: blue;
+}
+
+transitions
+
+a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    display: inline-block;
+    border:2px solid black;
+    transition: background-color 0.2s,
+    color 0.5s,padding 0.5s;
+}
+a:hover{
+    background-color: black;
+    color:white;
+    padding :10px 30px;
+}
+gradient:
+background-image: linear-gradient(direction,color1,color2);
+background-image: linear-gradient(to right,black,yellow);
+background-image: linear-gradient(45deg,black,yellow);
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.3)0%,rgba(0,0,0,0.8)100%),
+    url(spacex-OHOU-5UVIYQ-unsplash-1.webp);
+
+custom font:
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body{
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+        }
+    </style>
+
+transform
+transform: translate(x-axix,y-axis);
+ transform: rotate(45deg);
+
+animation
+ .box{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+       border-radius: 50%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       animation-name: slide;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       }
+       @keyframes slide{
+        from{
+            top: 0;
+            left: 0;
+        }
+        to{
+top: 0;
+left: 100%;
+        }
+       }
+
+
+
+another animation:
+@keyframes slide{
+       0%{
+        top: 0;
+        left: 0;
+       }
+       50%{
+        background-color: blue;
+       }
+       100%{
+        left: 100%;
+        background-color: antiquewhite;
+       }
+       }
+
+flex:
+ *{
+      box-sizing: border-box;
+    }
+#box{
+  display: flex;
+  flex-wrap: wrap;
+}
+#box div{
+  border: 2px solid black;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  
+}
+
+  *{
+      box-sizing: border-box;
+    }
+#box{
+  display: flex;
+  flex-wrap: wrap;
+}
+#box div{
+  border: 2px solid black;
+
+}
+.navigation{
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.content{
+  flex-basis: 80%;
+flex-grow: 1;
+flex-shrink: 0;
+}
+.header{
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: #ccc;
+  color: #555;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+grid
+ *{
+      box-sizing: border-box;
+    }
+ #grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap:20px;
+  grid-column-gap: 20px;
+ }
+.item{
+  border: 2px solid black;
+}
+.item1{
+  grid-column-start:1 ;
+  grid-column-end: 4;
+}
+.item4{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+media query element
+
+ body{
+      background-color: red;
+    }
+    @media (max-width:640px)
+    {
+      body{
+        background-color: blue;
+      }
+    }
+for changing things on different devices
+
+mobile first
+
+ body{
+      background-color: red;
+    }
+    @media (min-width:640px)
+    {
+      body{
+        background-color: blue;
+      }
+    }
+
+box-sizing:border-box making size including padding
+box-sizing:content-box making size excluding padding
+
+responsive embedds
+ .container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%;
+    }
+
+    .container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
+
+.box{
+  border: 2px solid black;
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 0;
+}
+@media (max-width:1000px) and (min-width:700px)
+{
+  .box{
+  border-radius: 50%;
+}
+}
+
+@media (max-width:767px) //mobile
+@media (max-width:1023px) and (min-width:768px) //tablet
+@media (max-width:1439px) and (min-width:1024px) //laptop
+@media (min-width:1440px) //desktop
+
+responsive layout
+
+ *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #layout{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #nav{
+      flex-basis: 100%;
+      border-bottom: 2px solid #aaa;
+      padding: 10px;
+    }
+#sidebar{
+  flex-basis: 20%;
+  border-right: 2px solid #aaa;
+  padding: 10px;
+}
+#content{
+  
+  flex-basis: 80%;
+  border-bottom: 2px solid #aaa;
+  padding: 10px;
+}
+@media (max-width:340px)
+{
+  #sidebar,#content{
+    flex-basis: 100%;
+  }
+}
+@media (max-width:250px)
+{
+  #sidebar{
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+  <div id="layout">
+    <div id="nav">
+Naviagtion in here
+    </div>
+    <div id="sidebar">
+sidebar in here
+    </div>
+    <div id="content">
+Content in here
+    </div>
+  </div>
+
+ 
+inline display doesnot have top and bottom margin
+inline block has top and bottom margin 
+
+
+====================================================================================
+Flex:
+
+flex-direction: row
+flex-direction: column
+flex-direction: row-reverse
+flex-direction: column-reverse
+================
+justify-content: space-start
+justify-content: space-end
+justify-content:space-between
+justify-content:center
+justify-content:space-around
+justify-content:space-evenly
+=====================
+align-items: baseline  //maintains space
+align-items: flex-start //treats items individually 
+align-items: flex-end
+align-items: center
+align-items: stretch
+====================
+align-content: baseline  //treats items whole
+align-content: flex-start
+align-content: flex-end
+align-content: center
+align-content: stretch
+====================
+align-self: baseline  //used on individual items
+align-self: flex-start //on one div
+align-self: flex-end
+align-self: center
+align-self: stretch
+===================
+on container parent
+flex-wrap: non wrap adjust according to size
+flex-wrap: wrap go to next line
+flex-wrap: wrap-reverse
+=====================
+on individual items of flex
+order
+flex-basis:100px //increase the size of child div
+flex-grow //size increase 
+flex-shrink  //use without flex-wrap
+short hand properties
+flex: flex-grow/flex-shrink/flex-basis
+flex-flow on container
+
+==========================================================
+Grid display:
+
+display:grid;
+grid-template-columns:200px 200px 200px;
+grid-template-rows:200px 200px 200px;
+grid-template-columns:1fr 2fr 1fr;
+grid-template-columns:repeat (3,1fr);
+grid-gap:20px;
+grid-auto-rows:100px;
+grid-auto-columns:100px;
+grid-auto-columns:minmax(200px,auto);
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+grid-row-start:2;
+grid-row-end:3;
+grid-column-start:2;
+grid-column-end:3;
+row-gap:20px;
+column-gap :20px;
+
+=============================================================================================
+
+calculator
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 21px;
+            padding: 20px 20px 20px;
+            background-color: #eee;
+        }
+
+        input[type=button] {
+            width: 23%;
+            height: 32px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: none;
+            font-size: 20px;
+            border: 1px solid #ab9595;
+        }
+
+        #Ans {
+            width: 90%;
+            height: 28px;
+            border-radius: 4px;
+            border: 1px solid black;
+            display: block;
+            text-align: end;
+            padding: 5px 5px 5px 10px;
+            font-size: 22px;
+        }
+    </style>
+    <script>
+        function OnClick(x) {
+            var y = document.getElementById('Ans');
+            if (x.value == 'C') {
+                y.value = "";
+            }
+            else if (x.value == '=') {
+                let value1 = "", value2 = "", op = "", check = false;
+                for (let i = 0; i < y.value.length; i++) {
+                    if (check) {
+                        value2 += y.value[i];
+                    }
+                    else if (y.value[i] == '+' || y.value[i] == '-' || y.value[i] == '*' || y.value[i] == '/') {
+                        check = true;
+                        op += y.value[i];
+                    }
+                    else {
+                        value1 += y.value[i];
+                    }
+                }
+                if (op == '+') {
+                    let ans = +value1 + (+value2);
+                    y.value = ans;
+                }
+                else if (op == '-') {
+                    let ans = +value1 - (+value2);
+                    y.value = ans;
+                }
+                else if (op == '*') {
+                    let ans = +value1 * (+value2);
+                    y.value = ans;
+                }
+                else if (op == '/') {
+                    let ans = +value1 / (+value2);
+                    y.value = ans;
+                }
+            }
+            else {
+                y.value += x.value;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" name="Answer" id="Ans">
+        <div style="margin:10px 0px 10px 0px">
+            <input type="button" value="1" onclick="OnClick(this)">
+            <input type="button" value="2" onclick="OnClick(this)">
+            <input type="button" value="3" onclick="OnClick(this)">
+            <input type="button" value="+" onclick="OnClick(this)">
+        </div>
+        <div style="margin:10px 0px 10px 0px">
+            <input type="button" value="4" onclick="OnClick(this)">
+            <input type="button" value="5" onclick="OnClick(this)">
+            <input type="button" value="6" onclick="OnClick(this)">
+            <input type="button" value="-" onclick="OnClick(this)">
+        </div>
+        <div style="margin:10px 0px 10px 0px">
+            <input type="button" value="7" onclick="OnClick(this)">
+            <input type="button" value="8" onclick="OnClick(this)">
+            <input type="button" value="9" onclick="OnClick(this)">
+            <input type="button" value="*" onclick="OnClick(this)">
+        </div>
+        <div style="margin:10px 0px 10px 0px">
+            <input type="button" value="C" style="background-color: red;" onclick="OnClick(this)">
+            <input type="button" value="0" onclick="OnClick(this)">
+            <input type="button" value="=" onclick="OnClick(this)">
+            <input type="button" value="/" onclick="OnClick(this)">
+        </div>
+    </div>
+</body>
+
+</html>
+
+===================================================================================================
+mine calculator
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .calculator input {
+      grid-column: span 4;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 20px;
+      border-color: silver;
+    }
+
+    .calculator button {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+    }
+
+    button:hover {
+      background-color: silver;
+      color: black;
+      transform: scale(1.2);
+    }
+  </style>
+  <script>
+    let result = 0;
+    let operator = "";
+    let firstnumber = "";
+    
+    function appendValue(value) {
+      document.getElementById("result").value += value;
+    }
+
+    function clearResult() {
+      document.getElementById("result").value = "";
+      result = 0;
+      operator = "";
+      firstnumber = "";
+    }
+
+    function calculate() {
+      let equation = document.getElementById("result").value;
+      let finalResult = "error";
+      try {
+        finalResult = solve(equation);
+      } catch (error) {
+        console.error(error);
+      }
+      document.getElementById("result").value = finalResult;
+      result = finalResult;
+      operator = "";
+      firstnumber = "";
+    }
+
+    function solve(equation) {
+      let check = false;
+      for (let i = 0; i < equation.length; i++) {
+        let Char = equation[i];
+        if (check) {
+          let temp = "";
+          while (i < equation.length && equation[i] !== '+' && equation[i] !== '-' && equation[i] !== '*' && equation[i] !== '/') {
+            temp += equation[i];
+            i++;
+          }
+          result = calculatevalue(parseFloat(firstnumber), operator, parseFloat(temp));
+          operator = "";
+          firstnumber = "";
+        } else if (Char === '+' || Char === '-' || Char === '*' || Char === '/') {
+          operator = Char;
+          check = true;
+        } else {
+          firstnumber += Char;
+        }
+      }
+      return result;
+    }
+
+    function calculatevalue(left, operator, right) {
+      switch (operator) {
+        case '+':
+          return left + right;
+        case '-':
+          return left - right;
+        case '*':
+          return left * right;
+        case '/':
+          if(right===0)
+          return 'error';
+          return left / right;
+        default:
+          return 'error';
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="appendValue('+')">+</button>
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('-')">-</button>
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('*')">*</button>
+    <button onclick="clearResult()">C</button>
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="appendValue('/')">/</button>
+  </div>
+</body>
+</html>
+==========================================================================================
+
+quiz
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+  .container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+  }
+  #question {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #choices {
+    list-style-type: none;
+    padding: 0;
+  }
+  .choice {
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Quiz App</h1>
+  <div id="question"></div>
+  <ul id="choices"></ul>
+  <button id="submit">Submit</button>
+  <p id="result"></p>
+</div>
+
+<script>
+  const questions = [
+    {
+      question: "What is the capital of France?",
+      choices: ["Paris", "London", "Berlin", "Rome"],
+      answer: "Paris"
+    },
+    {
+      question: "What is the largest planet in our solar system?",
+      choices: ["Earth", "Mars", "Jupiter", "Saturn"],
+      answer: "Jupiter"
+    },
+    {
+      question: "Who wrote 'Romeo and Juliet'?",
+      choices: ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+      answer: "William Shakespeare"
+    }
+  ];
+
+  const questionElement = document.getElementById("question");
+  const choicesElement = document.getElementById("choices");
+  const submitButton = document.getElementById("submit");
+  const resultElement = document.getElementById("result");
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function loadQuestion() {
+    const q = questions[currentQuestion];
+    questionElement.textContent = q.question;
+    choicesElement.innerHTML = "";
+    q.choices.forEach(choice => {
+      const li = document.createElement("li");
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = "choice";
+      input.value = choice;
+      li.appendChild(input);
+      li.appendChild(document.createTextNode(choice));
+      choicesElement.appendChild(li);
+    });
+  }
+
+  function checkAnswer() {
+    const userAnswer = document.querySelector("input[name='choice']:checked");
+    if (!userAnswer) {
+      resultElement.textContent = "Please select an answer";
+      return;
+    }
+    if (userAnswer.value === questions[currentQuestion].answer) {
+      score++;
+      resultElement.textContent = "Correct!";
+    } else {
+      resultElement.textContent = "Incorrect!";
+    }
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      loadQuestion();
+    } else {
+      resultElement.textContent = `Quiz completed! Your score: ${score}/${questions.length}`;
+      submitButton.disabled = true;
+    }
+  }
+
+  submitButton.addEventListener("click", checkAnswer);
+
+  loadQuestion();
+</script>
+
+</body>
+</html>
+=========================================================================================
+php
+edit name
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <table border="1" cellspacing="0">
+            <tr >
+                <th colspan="2" bgcolor="yellow">Student's Registration Form</th>
+            </tr>
+            <tr>
+                <td><label for="name">Student's Name</label></td>
+                <td><input type="text" name="sname"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Father's Name</label></td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="name">School's Name</label></td>
+                <td><input type="text" name="schname"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Roll No</label></td>
+                <td><input type="text" name="rollno"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Class</label></td>
+                <td>
+                <select name="class" id="" style="width: 100%;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+======================================
+index.php
+
+<?php
+
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failed".$con->connect_error);
+}
+$sname=$_POST['sname'];
+$fname=$_POST['fname'];
+$schname=$_POST['schname'];
+$rollno=$_POST['rollno'];
+$class=$_POST['class'];
+$sql="INSERT into studentdata(studentname,fathername,schoolname,rollno,class)values('$sname','$fname','$schname','$rollno','$class')";
+
+
+if($con->query($sql))
+{
+    header("location:view.php");
+}
+else{
+    echo "error".$sql."</br>".$con->error;
+}
+?>
+====================================
+view.php
+
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failed".$con->connect_error);
+}
+
+$sql="select * from studentdata";
+   $result=$con->query($sql);
+   if($result->num_rows>0)
+   {
+    echo '<table border="1">
+<tr>
+    <th colspan="7">View all the records</th>
+</tr>
+<tr>
+    <td>
+        Student Name
+    </td>
+    <td>
+        Father Name
+    </td>
+    <td>
+        School Name
+    </td>
+    <td>
+        Roll No
+    </td>
+    <td>
+        Class
+    </td>
+    <td>
+        Delete
+    </td>
+    <td>
+        Edit
+    </td>
+</tr>
+    ';
+    while($row=$result->fetch_assoc())
+    {
+        $x=$row['studentname'];
+        echo '<tr><td>'.$row['studentname'].'</td>
+        <td>'.$row['fathername'].'</td>
+        <td>'.$row['schoolname'].'</td>
+        <td>'.$row['rollno'].'</td>
+        <td>'.$row['class'].'</td>
+        <td>'."<a href='delete.php?id=$x'>Delete</a>".'</td>
+        <td>'."<a href='edit.php?id=$x'>edit</a>".'</td>';
+    }
+    echo '</table>';
+   }
+
+?>
+==========================
+delete.php
+
+<?php
+$servername='localhost';
+$username= 'root';
+$password= '';
+$dbname= 'paper';
+$con=new mysqli($servername, $username, $password, $dbname);
+if($con->connect_error){
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$sname=$_REQUEST["id"];
+
+$sql= "Delete from studentdata where studentname= '$sname'" ;
+if($con->query($sql))
+{
+    header("location:view.php");
+}
+else
+{
+    echo "error".$con->error;
+}
+?>
+========================
+edit.php
+
+<?php
+$servername='localhost';
+$username= 'root';
+$password= '';
+$dbname= 'paper';
+$con=new mysqli($servername, $username, $password, $dbname);
+if($con->connect_error){
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$sname=$_REQUEST["id"];
+$sql="select * from studentdata where studentname='$sname'";
+$result=$con->query($sql);
+if($result->num_rows>0)
+{
+    $row=$result->fetch_assoc();
+    $x=$row['studentname'];
+    echo "
+     <form action='save.php?id=$sname' method='post'>
+      <label for=''>Student Name</label>
+    <input type='text' value='".$row['studentname']."' name='sname' disabled><br><br>
+        <label for='fathername'>Fathername</label>
+        <input type='text' value='".$row['fathername']."' name='fname'><br><br>
+        <label for=''>School Name</label>
+        <input type='text' value='".$row['schoolname']."' name='schname'><br><br>
+        <label for=''>Roll No</label>
+        <input type='text' value='".$row['rollno']."' name='rollno'><br>
+        <label for=''>Class</label>
+        <input type='text' value='".$row['class']."' name='class'><br><br>
+   <input type='submit' value='Submit'>
+    </form>
+    ";
+}
+?>
+
+=======================
+save.php
+<?php
+$servername='localhost';
+$username= 'root';
+$password= '';
+$dbname= 'paper';
+$con=new mysqli($servername, $username, $password, $dbname);
+if($con->connect_error){
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$sname=$_REQUEST["id"];
+$fname=$_REQUEST["fname"];
+$schname=$_REQUEST["schname"];
+$rollno=$_REQUEST["rollno"];
+$class=$_REQUEST["class"];
+$sql="UPDATE studentdata set fathername='$fname',schoolname='$schname', rollno='$rollno', class='$class' where studentname='$sname'";
+if($con->query($sql))
+{
+    header("location:view.php");
+}
+else{
+    echo "error".$con->error;
+}
+?>
+=========================================================================================================
+edit id
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <table border="1" cellspacing="0">
+            <tr >
+                <th colspan="2" bgcolor="yellow">Student's Registration Form</th>
+            </tr>
+            <tr>
+                <td><label for="name">Roll No</label></td>
+                <td><input type="text" name="rollno"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Student's Name</label></td>
+                <td><input type="text" name="sname"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Father's Name</label></td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="name">School's Name</label></td>
+                <td><input type="text" name="schname"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="name">Class</label></td>
+                <td>
+                <select name="class" id="" style="width: 100%;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
+
+============
+index.php
+
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$rollno=$_REQUEST["rollno"];
+$sname=$_REQUEST["sname"];
+$fname=$_REQUEST["fname"];
+$schname=$_REQUEST["schname"];
+$class=$_REQUEST["class"];
+
+$sql="INSERT into editid(rollno,studentname,fathername,schoolname,class) values('$rollno','$sname','$fname','$schname','$class')";
+if($con->query($sql))
+{
+    
+}
+else{
+    echo "failed".$con->error;
+}
+
+?>
+
+================
+
+view.php
+
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$sql="select * from editid";
+$result=$con->query($sql);
+if($result->num_rows>0)
+{
+    echo '<table border="1">
+    <tr>
+        <th colspan="7">View all the records</th>
+    </tr>
+    <tr>
+        <td>
+            Roll No
+        </td>
+        <td>
+           Student Name
+        </td>
+        <td>
+            Father Name
+        </td>
+        <td>
+            School Name
+        </td>
+        <td>
+            Class
+        </td>
+        <td>
+            Delete
+        </td>
+        <td>
+            Edit
+        </td>
+    </tr>
+        ';
+        while($row=$result->fetch_assoc())
+        {
+            $x=$row['rollno'];
+            echo "<tr>
+            <td>".$row['rollno']."</td>
+            <td>".$row["studentname"]."</td>
+            <td>".$row["fathername"]."</td>
+            <td>".$row["schoolname"]."</td>
+            <td>".$row["class"]."</td>
+            <td>"."<a href='delete.php?id=$x'>DELETE</a>"."</td>
+            <td>"."<a href='edit.php?id=$x'>EDIT</a>"."</td>
+           </tr> ";
+        }
+        echo "</table>
+        ";
+
+}
+else{
+    echo "error".$con->error;
+}
+
+?>
+
+===============
+delete.php
+
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$id=$_REQUEST['id'];
+$sql="DELETE from editid where rollno='$id' ";
+if($con->query($sql))
+{
+    
+}
+
+else{
+    echo "error".$con->error;
+}
+?>
+=============
+edit.php
+
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$rollno=$_REQUEST["id"];
+$sql="select * from editid where rollno='$rollno'";
+$result=$con->query($sql);
+if($result->num_rows>0)
+{
+$row=$result->fetch_assoc();
+echo "
+ <form action='save.php?id=$rollno' method='post'>
+        <label for=''>Roll No</label>
+        <input type='text' value='".$row['rollno']."' name='rollno' disabled><br><br>
+        <label for=''>Student Name</label>
+        <input type='text' value='".$row['studentname']."' name='sname'><br><br>
+        <label for=''>Father Name</label>
+        <input type='text' value='".$row['fathername']."' name='fname'><br><br>
+        <label for=''>School Name</label>
+        <input type='text' value='".$row['schoolname']."' name='schname'><br><br>
+        <label for=''>Class</label>
+        <input type='text' value='".$row['class']."' name='class'><br><br>
+        <input type='submit' value='Submit'>
+    </form>
+";
+}
+
+?>
+
+=============
+save.php
+
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="paper";
+$con=new mysqli($servername,$username,$password,$dbname);
+if($con->connect_error)
+{
+    die("connection failure".$con->connect_error);
+}
+echo "connection successful";
+$rollno=$_REQUEST["id"];
+$sname=$_REQUEST["sname"];
+$fname=$_REQUEST["fname"];
+$schname=$_REQUEST["schname"];
+$class=$_REQUEST["class"];
+$sql="UPDATE editid set studentname='$sname',fathername='$fname',schoolname='$schname',class='$class' where rollno='$rollno'";
+if($con->query($sql))
+{
+    
+}
+else{
+    echo "error".$con->error;
+}
+
+?>
+================
+Laravel
+
+composer create-project --prefer-dist laravel/laravel your-project-name
+cd
+php artisan serve
+php artisan make:controller HomeController --resource
+
+web.php
+use App\Http\Controllers\HomeController;
+Route::get('home',[HomeController::class,'index']);
+
+ return view("home");
+
+views->home.blade.php
+
